@@ -229,7 +229,7 @@ input:required,input:invalid {background-image: url(caution.png);
 
 input:valid {background-image: none}
 
-lavel span {color: #ff0000}
+label span {color: #ff0000}
 /* ====== PC用の設定 ======*/
 @media only screen and (min-width:900px) {
 
@@ -348,7 +348,7 @@ article section:nth-of-type(1n) figcaption
 <li><a href="event.html">季節のイベント</a></li>
 <li><a href="contact.html">お問い合わせ</a></li>
 <li><a href="http://blog.xxx.xxx/">ブログ</a></li>
-<ul>
+</ul>
 </nav>
 
 <img src="src/header.jpg" height="300" width="900" alt="">
@@ -367,27 +367,35 @@ article section:nth-of-type(1n) figcaption
 <input type="hidden" name="_done" value="http://www.www.www/" />
 <input type="hidden" name="_subject" value="FORM MAIL" />
 
-<p><lavel>名前<span> (必須) </span>：<br />
+<p>
+<label>名前<span> (必須) </span>：<br>
 <input type="text" name="namae" size="40" required
 placeholder="名前を入力してください" autofocus>
-</lavel></p>
+</label>
+</p>
 
-<p><lavel>メールアドレス<span> (必須) </span>：<br />
+<p>
+<label>メールアドレス<span> (必須) </span>：<br>
 <input type="email" name="mail" size="40" required
 placeholder="メールアドレスを入力してください">
-</lavel></p>
+</label>
+</p>
 
-<p><lavel>URL:<br>
+<p>
+<label>URL:<br>
 <input type="url" name="url" size="40"
 placeholder="ホームページのURLを入力してください">
-</lavel>
+</label>
+</p>
 
 
-<p><lavel>コメント：<br />
+<p>
+<label>コメント：<br>
 <textarea name="comment" cols="50" rows="8"
 placeholder="コメントなどを入力してください">
 </textarea>
-</lavel></p>
+</label>
+</p>
 
 <p id="button">
 <input type="submit" value="送信" />
@@ -405,7 +413,6 @@ Copyright (C) Green Leaf, All rights reserved.
 </footer>
 </div>
 
-</div>
 
 
 </body>
